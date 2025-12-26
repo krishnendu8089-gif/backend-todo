@@ -12,7 +12,6 @@ mongoose.connect(process.env.MONGO_URL)
 mongoose.connection.on('connected', () => console.log('DATABASE connected'));
 
 const app=express()
-
 app.use(express.json())
 app.use(cors())
 app.use(bodyParser.json());
